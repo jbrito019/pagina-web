@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jairo Castaño - Consultor Independiente</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-bg {
+            background-color: #1A365D;
+        }
+
+        .brand-card, .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .brand-card:hover, .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .gold-text {
+            color: #D4AF37;
+        }
+
+        .navy-bg {
+            background-color: #1A365D;
+        }
+
+        .whatsapp-float {
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+                <img src="./2.jpeg" alt="Logo de Jairo Castaño" class="w-10 h-10 rounded-full">
+                <span class="text-xl font-bold text-[#1A365D]">Jairo Castaño</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-gray-700 hover:text-[#D4AF37] font-semibold">Sobre Mí</a>
+                <a href="#products" class="text-gray-700 hover:text-[#D4AF37] font-semibold">Productos</a>
+                <a href="#pillars" class="text-gray-700 hover:text-[#D4AF37] font-semibold">Pilares</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <div class="w-32 h-32 mx-auto mb-6 border-4 border-white rounded-full overflow-hidden">
+                        <img src="./images/2.jpeg" alt="Jairo Castaño" class="w-full h-full object-cover">
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Jairo Castaño</h1>
+                    <p class="text-xl md:text-2xl font-light mb-8">Consultor Independiente | Immunotec & Hinode Group</p>
+                    <div class="border-t-2 border-[#D4AF37] w-24 mx-auto mb-8"></div>
+                    <p class="text-2xl md:text-3xl font-semibold italic gold-text">
+                        Salud, Liderazgo y Riqueza con Propósito
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-8 mt-12 text-center shadow-lg">
+                    <h3 class="text-2xl font-bold text-[#1A365D] mb-4">Beneficios Exclusivos</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <div class="text-blue-500 text-4xl mb-3"><i class="fas fa-shield-alt"></i></div>
+                            <h4 class="text-xl font-semibold mb-2">Sistema Inmunológico</h4>
+                            <p class="text-gray-600">Fortalece tus defensas naturales con nuestros productos científicamente formulados.</p>
+                        </div>
+                        <div>
+                            <div class="text-purple-500 text-4xl mb-3"><i class="fas fa-heart"></i></div>
+                            <h4 class="text-xl font-semibold mb-2">Salud Integral</h4>
+                            <p class="text-gray-600">Diseñados para promover el bienestar físico y mental desde la ciencia.</p>
+                        </div>
+                        <div>
+                            <div class="text-pink-500 text-4xl mb-3"><i class="fas fa-gem"></i></div>
+                            <h4 class="text-xl font-semibold mb-2">Calidad Premium</h4>
+                            <p class="text-gray-600">Productos de alta gama con ingredientes selectos y efectivos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="2.jpeg" alt="Jairo Castaño" class="rounded-full shadow-2xl w-full max-w-sm mx-auto">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-bold text-[#1A365D] mb-4">Mi Misión es Tu Bienestar</h2>
+                        <p class="text-lg text-gray-700 mb-6">
+                            ¡Hola! Soy Jairo Castaño, y mi pasión es guiar a las personas hacia una vida más plena y próspera. A través de oportunidades de clase mundial con <strong class="font-semibold">Immunotec</strong> y <strong class="font-semibold">Hinode Group</strong>, te ayudo a construir un futuro donde la salud vibrante, el liderazgo auténtico y la libertad financiera no son solo sueños, sino una realidad tangible.
+                        </p>
+                        <p class="text-lg text-gray-700">
+                            Creo firmemente que todos merecemos vivir con un propósito claro. Mi compromiso es brindarte las herramientas, el conocimiento y el apoyo para que descubras tu potencial y alcances tus metas más ambiciosas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Products Section -->
+        <section id="products" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-[#1A365D] mb-2">Productos de Calidad para tu Bienestar</h2>
+                <p class="text-lg text-gray-700 text-center mb-12 max-w-2xl mx-auto">Descubre nuestra selección premium de productos Immunotec y Hinode formulados para potenciar tu salud y estilo de vida.</p>
+                
+                <h3 class="text-2xl font-bold text-[#1A365D] text-center mb-8">Productos Immunotec</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                    <!-- Immunocal Product 1 -->
+                    <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="./products/immunocal-regular.jpg" alt="Producto Immunocal Regular" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="text-xl font-bold text-[#1A365D] mb-2">Immunocal Regular</h4>
+                            <p class="text-gray-700 mb-4 flex-grow text-sm">Aislado de proteína de suero de leche, precursor natural del glutatión. Ayuda a fortalecer el sistema inmunitario y a mantener la salud general.</p>
+                            <p class="text-2xl font-bold text-[#1A365D] mb-4">$285.000 COP</p>
+                            <div class="mt-auto">
+                                <a href="https://wa.me/573136686603?text=Hola,%20estoy%20interesado%20en%20el%20producto%20Immunocal%20Regular" target="_blank" class="w-full flex items-center justify-center bg-green-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-600 transition duration-300 text-sm">
+                                    <i class="fab fa-whatsapp mr-2"></i> Preguntar por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Immunocal Product 2 -->
+                    <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="./products/immunocal-platinum.jpg" alt="Producto Immunocal Platinum" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="text-xl font-bold text-[#1A365D] mb-2">Immunocal Platinum</h4>
+                            <p class="text-gray-700 mb-4 flex-grow text-sm">La fórmula avanzada de Immunocal, con minerales añadidos y creatina. Ideal para adultos activos y para el mantenimiento de la masa muscular.</p>
+                            <p class="text-2xl font-bold text-[#1A365D] mb-4">$410.000 COP</p>
+                            <div class="mt-auto">
+                                <a href="https://wa.me/573136686603?text=Hola,%20estoy%20interesado%20en%20el%20producto%20Immunocal%20Platinum" target="_blank" class="w-full flex items-center justify-center bg-green-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-600 transition duration-300 text-sm">
+                                    <i class="fab fa-whatsapp mr-2"></i> Preguntar por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Immunocal Product 3 -->
+                    <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="immunocal-optimizer.jpg" alt="Producto Immunocal Optimizer" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="text-xl font-bold text-[#1A365D] mb-2">Immunocal Optimizer</h4>
+                            <p class="text-gray-700 mb-4 flex-grow text-sm">Mejora la absorción de Immunocal y aporta nutrientes adicionales como vitaminas y minerales esenciales para el bienestar diario.</p>
+                            <p class="text-2xl font-bold text-[#1A365D] mb-4">$190.000 COP</p>
+                            <div class="mt-auto">
+                                <a href="https://wa.me/573136686603?text=Hola,%20estoy%20interesado%20en%20el%20producto%20Immunocal%20Optimizer" target="_blank" class="w-full flex items-center justify-center bg-green-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-600 transition duration-300 text-sm">
+                                    <i class="fab fa-whatsapp mr-2"></i> Preguntar por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Immunocal Product 4 -->
+                    <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="immunocal-k21.jpg" alt="Producto Immunocal K-21" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="text-xl font-bold text-[#1A365D] mb-2">Immunocal K-21</h4>
+                            <p class="text-gray-700 mb-4 flex-grow text-sm">Suplemento con vitaminas, minerales y extractos herbales para apoyar la vitalidad y el equilibrio general del cuerpo.</p>
+                            <p class="text-2xl font-bold text-[#1A365D] mb-4">$220.000 COP</p>
+                            <div class="mt-auto">
+                                <a href="https://wa.me/573136686603?text=Hola,%20estoy%20interesado%20en%20el%20producto%20Immunocal%20K-21" target="_blank" class="w-full flex items-center justify-center bg-green-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-600 transition duration-300 text-sm">
+                                    <i class="fab fa-whatsapp mr-2"></i> Preguntar por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold text-[#1A365D] text-center mb-8">Productos Hinode Group</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Hinode Product 1 -->
+                    <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="./products/empire-vip.png" alt="Perfume Empire VIP" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="text-xl font-bold gold-text mb-2">Perfume Empire VIP</h4>
+                            <p class="text-gray-700 mb-4 flex-grow text-sm">Una fragancia exclusiva para el hombre de éxito. Notas aromáticas que combinan lo tradicional con lo moderno, ideal para ocasiones especiales.</p>
+                            <p class="text-2xl font-bold gold-text mb-4">$165.000 COP</p>
+                            <div class="mt-auto">
+                                <a href="https://wa.me/573136686603?text=Hola,%20estoy%20interesado%20en%20el%20Perfume%20Empire%20VIP" target="_blank" class="w-full flex items-center justify-center bg-green-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-600 transition duration-300 text-sm">
+                                    <i class="fab fa-whatsapp mr-2"></i> Preguntar por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hinode Product 2 -->
+                    <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="grace-midnight.png" alt="Perfume Grace Midnight" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="text-xl font-bold gold-text mb-2">Perfume Grace Midnight</h4>
+                            <p class="text-gray-700 mb-4 flex-grow text-sm">Una fragancia femenina sofisticada y misteriosa, perfecta para la mujer que brilla en la noche. Con notas dulces y amaderadas.</p>
+                            <p class="text-2xl font-bold gold-text mb-4">$150.000 COP</p>
+                            <div class="mt-auto">
+                                <a href="https://wa.me/573136686603?text=Hola,%20estoy%20interesado%20en%20el%20Perfume%20Grace%20Midnight" target="_blank" class="w-full flex items-center justify-center bg-green-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-600 transition duration-300 text-sm">
+                                    <i class="fab fa-whatsapp mr-2"></i> Preguntar por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hinode Product 3 -->
+                    <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="gel-corps-lignea.png" alt="Gel Corps Lignea" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="text-xl font-bold gold-text mb-2">Gel Corps Lignea</h4>
+                            <p class="text-gray-700 mb-4 flex-grow text-sm">Gel reductor de medidas con alcanfor y mentol. Ayuda a quemar grasa localizada y a mejorar la apariencia de la piel.</p>
+                            <p class="text-2xl font-bold gold-text mb-4">$95.000 COP</p>
+                            <div class="mt-auto">
+                                <a href="https://wa.me/573136686603?text=Hola,%20estoy%20interesado%20en%20el%20Gel%20Corps%20Lignea" target="_blank" class="w-full flex items-center justify-center bg-green-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-600 transition duration-300 text-sm">
+                                    <i class="fab fa-whatsapp mr-2"></i> Preguntar por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hinode Product 4 -->
+                    <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <img src="dazzle-base-hd.png" alt="Base Líquida Dazzle HD" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="text-xl font-bold gold-text mb-2">Base Líquida Dazzle HD</h4>
+                            <p class="text-gray-700 mb-4 flex-grow text-sm">Base de alta cobertura con efecto HD, ideal para un acabado impecable y natural. Disponible en varios tonos.</p>
+                            <p class="text-2xl font-bold gold-text mb-4">$80.000 COP</p>
+                            <div class="mt-auto">
+                                <a href="https://wa.me/573136686603?text=Hola,%20estoy%20interesado%20en%20la%20Base%20Líquida%20Dazzle%20HD" target="_blank" class="w-full flex items-center justify-center bg-green-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-600 transition duration-300 text-sm">
+                                    <i class="fab fa-whatsapp mr-2"></i> Preguntar por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pillars Section -->
+        <section id="pillars" class="py-20 navy-bg text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-12">Mis Pilares Fundamentales</h2>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <!-- Salud -->
+                    <div class="p-6">
+                        <div class="bg-[#D4AF37] rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-2 gold-text">Salud</h3>
+                        <p class="opacity-80">El fundamento de todo. Una salud óptima te da la energía y claridad para perseguir tus sueños y disfrutar de la vida al máximo.</p>
+                    </div>
+
+                    <!-- Liderazgo -->
+                    <div class="p-6">
+                        <div class="bg-[#D4AF37] rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283-.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-2 gold-text">Liderazgo</h3>
+                        <p class="opacity-80">Liderar con el ejemplo, inspirando a otros a crecer. El verdadero liderazgo se trata de servicio, empoderamiento y creación de nuevos líderes.</p>
+                    </div>
+
+                    <!-- Riqueza -->
+                    <div class="p-6">
+                        <div class="bg-[#D4AF37] rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01M12 6v-1h4a1 1 0 011 1v3a1 1 0 01-1 1h-4a1 1 0 01-1-1v-3a1 1 0 011-1h4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-2 gold-text">Riqueza con Propósito</h3>
+                        <p class="opacity-80">Más que dinero, es libertad. La riqueza es la herramienta para vivir sin limitaciones, ayudar a otros y dejar un legado positivo en el mundo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 bg-gradient-to-r from-blue-50 to-purple-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-[#1A365D] mb-12">Lo que dicen nuestros clientes</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <div class="text-yellow-400 text-2xl mb-2">★★★★★</div>
+                        <p class="italic mb-4">"Los productos Immunocal cambiaron mi energía y vitalidad. ¡Recomendado 100%!"</p>
+                        <p class="font-semibold">- María G.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <div class="text-yellow-400 text-2xl mb-2">★★★★★</div>
+                        <p class="italic mb-4">"Los perfumes Hinode son excepcionales, recibo cumplidos cada vez que los uso."</p>
+                        <p class="font-semibold">- Carlos M.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <div class="text-yellow-400 text-2xl mb-2">★★★★★</div>
+                        <p class="italic mb-4">"La asesoría personalizada hace toda la diferencia. Excelente servicio."</p>
+                        <p class="font-semibold">- Ana L.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/573136686603?text=Hola,%20vengo%20de%20tu%20página%20web%20y%20quisiera%20más%20información." 
+           target="_blank" 
+           class="whatsapp-float fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg z-50 animate-bounce">
+            <i class="fab fa-whatsapp text-4xl"></i>
+        </a>
+
+    </main> <!-- Cierre correcto de la etiqueta main -->
+
+    <!-- CTA Section -->
+        <section class="py-16 bg-[#1A365D] text-white text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-6">¿Listo para transformar tu bienestar?</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">Contáctanos ahora para recibir asesoría personalizada sobre nuestros productos.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#contact" class="bg-[#D4AF37] text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-yellow-600 transition">Contactar</a>
+                    <a href="#products" class="bg-white text-[#1A365D] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-gray-100 transition">Ver Productos</a>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="navy-bg text-white pt-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand Info -->
+                <div class="md:col-span-1">
+                    <h3 class="text-lg font-semibold mb-4 gold-text">Jairo Castaño</h3>
+                    <p class="text-sm opacity-80">Salud, Liderazgo y Riqueza con Propósito.</p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Enlaces</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-[#D4AF37] transition-colors text-sm opacity-80 hover:opacity-100">Sobre Mí</a></li>
+                        <li><a href="#products" class="hover:text-[#D4AF37] transition-colors text-sm opacity-80 hover:opacity-100">Productos</a></li>
+                        <li><a href="#pillars" class="hover:text-[#D4AF37] transition-colors text-sm opacity-80 hover:opacity-100">Pilares</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contacto</h3>
+                    <ul class="space-y-2 text-sm opacity-80">
+                        <li class="flex items-center">
+                            <i class="fa fa-phone mr-3"></i>
+                            <span>+57 313 6686603</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope mr-3"></i>
+                            <a href="mailto:castanojairo777@gmail.com" class="hover:text-[#D4AF37] transition-colors">castanojairo777@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Social Media -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Sígueme</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-xl hover:text-[#D4AF37] transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-xl hover:text-[#D4AF37] transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-xl hover:text-[#D4AF37] transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 py-6 text-center text-sm opacity-60">
+                <p>&copy; 2025 Jairo Castaño - Todos los derechos reservados. Hecho por Jesus Brito</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
